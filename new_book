@@ -1,0 +1,52 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>READ Library</title>
+</head>
+    
+<body>
+   
+    <center>
+    <?php
+   include'list.php';
+   include'css.css';
+   $re=$_GET['re'];
+   ?>
+        <div id="d3" style="background: #b6a5a5; width: 100%; height: 500px;"> 
+            <br><br><br><br>
+            <h2>add new books</h2>
+            <form style="width: 80%;" method="get" action="fun/add_user.php">
+              
+           <?php
+           if($re=='1'){
+            echo"a book has been added";
+           }
+           ?>
+             <div>
+                    <label class="f25"> book_name</label>
+                    <input class="f75" type=""name=" book_name" placeholder="book_name">
+                    
+                </div>
+                <div>
+                    <label class="f25"> author_name</label>
+                    <input class="f75" type=""name="author_name" placeholder="author_name">
+                </div> 
+                <div>
+                    <label class="f25">cover_photo</label>
+                    <input class="f75" type="file"name="cover_photo " >
+                </div>
+               
+                <div>
+                    <input type="submit" name="" value="add book">
+                </div>
+            </form>
+            
+        </div>
+             
+            
+        </center>
+    </body>
+    </html>
